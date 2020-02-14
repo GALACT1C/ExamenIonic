@@ -17,7 +17,6 @@ import { ActivatedRoute } from '@angular/router';
 
 export class DetallesPage implements OnInit {
 //Asignacion de producto
-  producto: (ITecnologia | IInmobiliaria | IHogar | IMotor);
   key: string = "";
 
   constructor(private _productoService: ProductoService, private _activatedRoute: ActivatedRoute) { }

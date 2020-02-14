@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Lista de productos
+      </ion-title>
+      <ion-buttons slot="secondary">
+        <ion-button routerLink="/home">
+          <ion-icon slot="icon-only" name="home"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+  
+  <ion-content>
+    <ion-card-header [routerLink]="['/mis_chats.page.ts', item.key]">
+        <ion-card-title>{{item.mis_chats}}</ion-card-title>
+      </ion-card-header>
+  </ion-content>

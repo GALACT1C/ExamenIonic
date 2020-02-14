@@ -7,9 +7,11 @@ import { IHogar } from '../interfaces';
 import { IMotor } from '../interfaces';
 import { IKey } from '../interfaces';
 import { IProducto } from '../interfaces';
+import { IChats } from '../interfaces';
 import { ActivatedRoute } from '@angular/router';
 import { UsuarioService } from '../services/usuario.service';
 import {ToastController} from '@ionic/angular';
+import { ICapability } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-listado',
@@ -18,7 +20,7 @@ import {ToastController} from '@ionic/angular';
 })
 export class ListadoPage implements OnInit {
 
-  productos: (ITecnologia & IInmobiliaria & IHogar & IMotor & IKey)[] = [];
+  productos: (ITecnologia & IInmobiliaria & IHogar & IMotor & IChats & IKey)[] = [];
   uid:string = "";
 
   constructor(private _toastController: ToastController, private _usuariosService:UsuarioService, private _productoService: ProductoService, private _activatedRoute: ActivatedRoute) { }
